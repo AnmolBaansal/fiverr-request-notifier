@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import sys
 
 id = ""
+retryTime = 300
 
 def work(username):
 	try:
@@ -64,4 +65,4 @@ while True:
 		print "success"
 	else:
 		print "error"
-	time.sleep(300)
+	time.sleep(retryTime)
